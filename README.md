@@ -1,13 +1,6 @@
 # Random Image
 
-The Random Image Service is a lightweight, serverless API designed to randomly select and return image URLs from a specified category. Built with Go and leveraging GitHub as an image repository and jsDelivr as a CDN, this service efficiently serves random images suitable for a wide range of applications, from dynamic website content to testing and placeholders.
-
-## Features
-
-- **Serverless architecture** for scalability and cost-effectiveness.
-- **Category-based image selection** to return relevant images.
-- **Integration with GitHub** for easy image management.
-- **Utilization of jsDelivr CDN** for fast and reliable image delivery.
+The Random Image is a lightweight, restful API designed to return image URLs from a specified category. Built with Go and leveraging GitHub as an image repository and jsDelivr as a CDN, this service efficiently serves random images suitable for a wide range of applications, from dynamic website content to testing and placeholders.
 
 ## Getting Started
 
@@ -17,7 +10,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 - Go (Version 1.18 or later recommended)
 - Access to a GitHub repository for storing images
-- An AWS account if deploying the service to AWS Lambda (optional)
 
 ### Installation
 
@@ -32,14 +24,10 @@ cd random-image-service
 
 Upload your images to a GitHub repository, organizing them into folders/categories as needed.
 
-3. **Configure the service**
-
-Edit the service configuration to point to your GitHub repository and set any necessary parameters such as the AWS credentials if deploying to AWS Lambda.
-
-4. **Run locally**
+3. **Run locally**
 
 ```sh
-go run main.go
+go run *.go
 ```
 
 This starts the service locally. You can access it at `http://localhost:8080/image/random/{category}`.
