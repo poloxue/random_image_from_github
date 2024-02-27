@@ -1,4 +1,4 @@
-# Random Image Service
+# Random Image
 
 The Random Image Service is a lightweight, serverless API designed to randomly select and return image URLs from a specified category. Built with Go and leveraging GitHub as an image repository and jsDelivr as a CDN, this service efficiently serves random images suitable for a wide range of applications, from dynamic website content to testing and placeholders.
 
