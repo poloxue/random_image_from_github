@@ -32,15 +32,6 @@ go run *.go
 
 This starts the service locally. You can access it at `http://localhost:8080/image/random/{category}`.
 
-### Deployment
-
-To deploy this service to AWS Lambda, follow these steps:
-
-1. Package your application.
-2. Use the AWS CLI or AWS Management Console to create a new Lambda function.
-3. Upload your package and set the handler to your function.
-4. Configure API Gateway to expose your Lambda function.
-
 ## Usage
 
 To get a random image, make a GET request to the service with the desired category:
